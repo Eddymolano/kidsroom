@@ -1,3 +1,22 @@
 .home {
-  background-color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../media/icons/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+
+  .title {
+    // background: linear-gradient(90deg, #34b705 -4.48%, #801c18 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // background-clip: text;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-top: 30px;
+    margin-bottom: 32px;
+  }
 }
