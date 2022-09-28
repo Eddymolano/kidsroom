@@ -4,12 +4,22 @@
   width: 100%;
 
   .menu {
+    // background-color: #000000;
     background-color: #192029;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 100px 100px 0 50px;
+    padding: 50px 100px 0 50px;
+
+    .logo {
+      margin-bottom: 30px;
+      border-radius: 50px;
+      img {
+        height: 70px;
+        width: 240px;
+      }
+    }
 
 
     .menuItem {

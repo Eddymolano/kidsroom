@@ -4,6 +4,7 @@ import Classnames from "classnames/bind";
 import InicioLogo from "../../media/icons/inicio.svg";
 import AlfabetoLogo from "../../media/icons/alfabeto.svg";
 import NumerosLogo from "../../media/icons/numeros.svg";
+import Logo from "../../media/icons/logo1.jpeg";
 
 
 export interface IMainPage {
@@ -36,6 +37,9 @@ const MainPage: React.FC<IMainPage> = ({ children }) => {
   return (
     <div className={styles.mainPage}>
       <div className={styles.menu}>
+        <div className={styles.logo}>
+          <img src={Logo} alt="" />
+        </div>
           {menuInfo.map((item, i) => <div key={i} onClick={item.onCLick} className={styles.menuItem}>
             <img src={item.src} alt="" />
             <label className={cx({
