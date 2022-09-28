@@ -1,10 +1,13 @@
 import React from "react";
 import styles from "./home.module.scss";
 import MainPage from "../../components/main-page";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
+ const {state} = useLocation();
+ console.log("state: ", state);
   return (
-    <MainPage>
+    <MainPage id={state} >
       <div className={styles.home}>
         <div className={styles.title}>KIDSROOM</div>
         <div className={styles.video}>

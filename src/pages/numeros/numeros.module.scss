@@ -1,0 +1,22 @@
+.numeros {
+  background-image: url("../../media/icons/numbers-bg.jpeg");
+  background-repeat: repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 50px;
+  width: 100%;
+
+  .item {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    img:hover {
+      transform: scale(1.6); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+  }
+}

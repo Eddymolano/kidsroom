@@ -6,6 +6,8 @@ import './index.css';
 import { BrowserRouter } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
+import Alfabeto from "./pages/alfabeto";
+import Numeros from "./pages/numeros";
 // import Home from "../src/pages/home";
 
 
@@ -17,6 +19,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />}/>
+        <Route path='/alfabeto' element={<Alfabeto />}/>
+        <Route path='/numeros' element={<Numeros />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
