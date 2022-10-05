@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import Alfabeto from "./pages/alfabeto";
 import Numeros from "./pages/numeros";
+import EnviarMensaje from "./pages/enviar-mensaje";
 // import Home from "../src/pages/home";
 
 
@@ -21,6 +22,7 @@ root.render(
         <Route path='/' element={<Home />}/>
         <Route path='/alfabeto' element={<Alfabeto />}/>
         <Route path='/numeros' element={<Numeros />}/>
+        <Route path='/enviar-mensaje' element={<EnviarMensaje />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

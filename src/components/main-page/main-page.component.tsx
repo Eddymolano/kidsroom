@@ -36,6 +36,12 @@ const MainPage: React.FC<IMainPage> = ({ children, id }) => {
       label: "NÚMEROS",
       onCLick: () => routeChange("/numeros", 2),
       src: NumerosLogo
+    },
+    {
+      id: 3,
+      label: "ENVIAR MENSAJE",
+      onCLick: () => routeChange("/enviar-mensaje", 3),
+      src: AlfabetoLogo
     }
   ];
 

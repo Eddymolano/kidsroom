@@ -1,0 +1,60 @@
+.enviarMensaje {
+  align-items: center;
+  background-image: url("../../media/icons/enviar-mensaje-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 30px;
+
+  .header {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .images {
+    min-height: 364px;
+
+    @media screen and (min-width: 0px) and (max-width: 1020px) {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .bottom {
+    input[type="text"] { 
+      background-color: transparent;
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      outline: none;
+    }
+
+    .button {
+      background-color: #1D76BC;
+      box-shadow: 0px 0px 0px 2px #1D76BC;
+      border-radius: 16px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-top: 20px;
+      padding: 8px 16px;
+      width: fit-content;
+    }
+
+    .button:hover {
+        box-shadow: 0px 0px 0px 2px #01345c;
+    }
+    .button:active {
+      background-color: #01345c;
+      box-shadow: 0px 0px 0px 2px #01345c;
+    }
+  }
+}

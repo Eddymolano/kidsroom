@@ -4,11 +4,16 @@
   background-size: cover;
   box-sizing: border-box;
   width: 100%;
+  height: inherit;
   // background-color: #89C77A;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 30px;
   padding: 50px;
+
+  @media screen and (min-width: 0px) and (max-width: 1020px) {
+    grid-template-columns: 1fr;
+  }
 
   .item {
     img {
